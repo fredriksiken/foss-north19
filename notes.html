@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# FOSS-north 19
+Fredrik Sik&eacute;n
+---
+
+# Talks
+
+* Open Source, Standards Development and Patents in Europe (Mirko Boehm)
+* Let's Lisp like it's 1959 (Kristoffer Gr&ouml;nlund)
+* Understanding user namespaces (Michael Kerrisk)
+* Component-based Design System and Development (Tereza Novotna, David Halasz)
+* Limiting side-effects of applications at compile-time (Ram&oacute;n Soto Mathiesen)
+* Open Data - the City of Gothenburg (Kim Lantto)
+* Open Data - Mimbly (Nicolas Maxant)
+* 17,000 contributions in 32K RAM (Jan Jongboom)
+* Common Voice - Building Multilingual Voice Datasets (Kalyan Dikshit)
+* Reducing the boot time of Linux devices (Chris Simmonds)
+* Open Source Geolocation: The story & challenges ahead (Zeeshan Ali)
+
+---
+
+# Open Source, Standards Development and Patents in Europe (Mirko Boehm)
+
+* Discussion between how FOSS and legal departements handling patents works (or dont do) together
+* What comes first implementation or specification. In FOSS implementation comes first than the specification.
+* None of us can define a standard since a standard can only be set by a recognized party. De-facto standards...
+
+---
+
+# Let's Lisp like it's 1959 (Kristoffer Gr&ouml;nlund)
+
+* Quite out there but gave a nice history lesson about LISP and John McCarty
+* Simplicty of implementing an interpreter for it
+* Modern implementation today is Closure
+
+---
+
+# Understanding user namespaces (Michael Kerrisk)
+
+* seven namespaces in Linux (PID, UTS, network etc.)
+* what does it mean to be superuser in a namespace? releation to its parents
+* unshare...
+* security conserents, new execution paths
+
+---
+
+# Component-based Design System and Development (Tereza Novotna, David Halasz)
+
+* Red Hat has many web tooling (about 50)
+* Typically acquired companies has different look and feel
+* Leaving bootstrap since more complex applications are hard to manage. Easy to bootstrap?
+* [PatternFly](https://www.patternfly.org/)
+
+---
+
+# Limiting side-effects of applications at compile-time (Ram&oacute;n Soto Mathiesen)
+
+* Haskell - stateless functional language 
+* By separating side effects to special parts (Monads) one can make sure side effects wont happen
+* Forcing third party to not have side effect
+* Securty
+
+---
+
+# Open Data - the City of Gothenburg (Kim Lantto)
+
+* Gothenburg ranked 2nd Smart City in the world
+* [Open data](
+https://goteborg.se/wps/portal/start/kommun-o-politik/kommunfakta/stadens-digitala-service/oppna-data/!ut/p/z1/hY6xDoIwGISfhrX_T6lQ3JpANOhqwC4GTC0klJJSbeLTi6OJxtsu913uQEIDcmofg279YKd2XP1ZphdGdxhXLD7wtGQoTkWxpzEmoqRQ_wPkGuMPCYQK5NAZEq6GIKF0k3HK85xnjOdpnr33xdQlXIN06qaccuTu1lu99_OyjTDCEALR1upRkas1EX6r9Hbx0HySMJvmeVS1eAGE8Eap/dz/d5/L2dBISEvZ0FBIS9nQSEh/)
+---
+
+# Open Data - Mimbly (Nicolas Maxant)
+
+* [Water-recycling system from washing machine](https://www.mimbly.se/projects)
+* Using available data and collected data to take decisions
+---
+
+# 17,000 contributions in 32K RAM (Jan Jongboom)
+
+* 31 billion uC shipped 2019 (25 billion in 2015)
+* Mbed OS (Real-Time Operating System for uC)
+* 400 unique contributors
+* Apache 2.0 license
+* libraries of functions, HAL API, HAL implementation
+![Design](https://os.mbed.com/media/uploads/emilmont/mbed_layers.png)
+* ARM only
+---
+
+# Common Voice - Building Multilingual Voice Datasets (Kalyan Dikshit)
+
+* Moz://a is an initiative to make vioce recognition open
+* Google, Apple, Amazon has its own locked in ones
+* To help building the DB join the project
+* Needs 1000 hours of a language to be accurate
+
+---
+
+# Reducing the boot time of Linux devices (Chris Simmonds)
+
+* From 11+ seconds to 2+ seconds
+* Changing boot orderin Linux, be aware of unloaded resources
+* Remove unused drivers in kernel
+* Remove countdown in u-boot, remove drivers in u-boot
+* Falcon mode!
+
+---
+
+# Open Source Geolocation: The story & challenges ahead (Zeeshan Ali)
+
+* Getting a position from e.g. a laptop is not easy
+* geoIP, GPS, SSID...
+* Google knoe a lot but we dont get access to it all
+* Geoclue
+* Privacy issues - dont give random application a users location
+
+---
+
+# Those slides
+
+[remark](https://github.com/gnab/remark)
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
